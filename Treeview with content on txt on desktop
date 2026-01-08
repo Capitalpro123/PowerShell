@@ -1,1 +1,7 @@
-Get-ChildItem -Path "YOURPATHHERE" -Recurse -File | ForEach-Object { $_.FullName; Get-Content $_.FullName } | Out-File "$env:USERPROFILE\Desktop\output.txt"
+Get-ChildItem -Path "YOURPATHHERE" -Recurse -File | ForEach-Object { $_.FullName; Get-Content $_.FullName } | Out-File "$env:USERPROFILE\Desktop\filename.txt"
+
+replace YOURPATHHERE with the path of the folder you want to make the treeview and copy the folder than execute in the PowerShell console and
+treeview + file content will be inside a txt file on the desktop.
+USERPROFILE\Desktop\filename.txt 
+also replace USERPROFILE with your win user
+and filename with the name you want.
