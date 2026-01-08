@@ -1,0 +1,4 @@
+Get-ChildItem -Path "YOURPATHHERE" -Recurse | Select-Object FullName | clip
+
+Replace YOURPATHHERE with the path of the folder that you want to make the treeview and the execute in the powershell console
+and the treeview will be copied in your clipboard.
